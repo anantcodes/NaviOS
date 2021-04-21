@@ -15,24 +15,37 @@ struct RedOneView: View {
                     .navigationTitle("Red One")
                     .offset(y: -60)
                 
-                NavigationLink(destination:BlueTwoView(),label:{
+                NavigationLink(destination: BlueTwoView(color: .orange),label:{
                     Text("Next Screen")
+                        .bold()
+                        .frame(width: 280, height: 50)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                     })
             }
         }
-        
     }
 }
 
 struct BlueTwoView: View {
+    
+    var color: Color
+    
+    
     var body: some View {
             VStack{
-                CircleNumberView(color: .blue,number: 2)
+                CircleNumberView(color: color,number: 2)
                     .navigationTitle("Blue Two")
                     .offset(y: -60)
                 
                 NavigationLink(destination:Text("Destination"),label:{
                     Text("Next Screen")
+                        .bold()
+                        .frame(width: 280, height: 50)
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                     })
             }
     }
