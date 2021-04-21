@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RedOneView: View {
     var body: some View {
         NavigationView{
             VStack{
@@ -15,7 +15,7 @@ struct ContentView: View {
                     .navigationTitle("Red One")
                     .offset(y: -60)
                 
-                NavigationLink(destination:Text("Destination"),label:{
+                NavigationLink(destination:BlueTwoView(),label:{
                     Text("Next Screen")
                     })
             }
@@ -23,6 +23,22 @@ struct ContentView: View {
         
     }
 }
+
+struct BlueTwoView: View {
+    var body: some View {
+            VStack{
+                CircleNumberView(color: .blue,number: 2)
+                    .navigationTitle("Blue Two")
+                    .offset(y: -60)
+                
+                NavigationLink(destination:Text("Destination"),label:{
+                    Text("Next Screen")
+                    })
+            }
+    }
+}
+
+
 
 struct CircleNumberView: View {
     
@@ -43,6 +59,6 @@ struct CircleNumberView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RedOneView()
     }
 }

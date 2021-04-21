@@ -11,7 +11,7 @@ import SwiftUI
 struct NaviOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RedOneView()
         }
     }
 }
