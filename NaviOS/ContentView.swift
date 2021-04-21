@@ -9,8 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        CircleNumberView(color: .red,number: 1)
+    }
+}
+
+struct CircleNumberView: View {
+    
+    var color: Color
+    var number: Int
+    
+    var body: some View{
+        ZStack{
+            Circle()
+                .frame(width: 200, height: 200)
+                .foregroundColor(color)
+            Text("\(number)")
+                .foregroundColor(.white)
+                .font(.system(size: 70,weight:.bold))
+        }
     }
 }
 
