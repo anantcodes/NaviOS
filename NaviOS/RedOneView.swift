@@ -25,6 +25,7 @@ struct RedOneView: View {
                     })
             }
         }
+        .accentColor(Color(.label))
     }
 }
 
@@ -85,5 +86,6 @@ struct CircleNumberView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         RedOneView()
+            .preferredColorScheme(.dark)
     }
 }
