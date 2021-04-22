@@ -1,3 +1,3 @@
 # NaviOS
 
-Interavtive Navigation throughout the iOS application.
+Interactive Navigation throughout the iOS application.
