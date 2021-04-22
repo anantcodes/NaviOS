@@ -11,6 +11,7 @@
 		0ECD1A2626306C9C002FFC33 /* RedOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD1A2526306C9C002FFC33 /* RedOneView.swift */; };
 		0ECD1A2826306C9E002FFC33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ECD1A2726306C9E002FFC33 /* Assets.xcassets */; };
 		0ECD1A2B26306C9E002FFC33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ECD1A2A26306C9E002FFC33 /* Preview Assets.xcassets */; };
+		0ED54D1A26315E3200341C8F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0ED54D1926315E3200341C8F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0ECD1A2726306C9E002FFC33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ECD1A2A26306C9E002FFC33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0ECD1A2C26306C9E002FFC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED54D1926315E3200341C8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		0ECD1A1726306C9C002FFC33 = {
 			isa = PBXGroup;
 			children = (
+				0ED54D1926315E3200341C8F /* README.md */,
 				0ECD1A2226306C9C002FFC33 /* NaviOS */,
 				0ECD1A2126306C9C002FFC33 /* Products */,
 			);
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED54D1A26315E3200341C8F /* README.md in Resources */,
 				0ECD1A2B26306C9E002FFC33 /* Preview Assets.xcassets in Resources */,
 				0ECD1A2826306C9E002FFC33 /* Assets.xcassets in Resources */,
 			);
