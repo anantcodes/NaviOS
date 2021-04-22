@@ -39,7 +39,7 @@ struct BlueTwoView: View {
                     .navigationTitle("Blue Two")
                     .offset(y: -60)
                 
-                NavigationLink(destination:Text("Destination"),label:{
+                NavigationLink(destination:GreenThreeView(),label:{
                     Text("Next Screen")
                         .bold()
                         .frame(width: 280, height: 50)
@@ -47,6 +47,18 @@ struct BlueTwoView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                     })
+            }
+    }
+}
+
+struct GreenThreeView: View {
+    
+    
+    var body: some View {
+            VStack{
+                CircleNumberView(color: .green,number: 3)
+                    .navigationTitle("Green Three")
+                    .offset(y: -60)
             }
     }
 }
